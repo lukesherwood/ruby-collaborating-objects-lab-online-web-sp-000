@@ -13,7 +13,6 @@ class Song
   end
   
   def self.new_by_filename(filename)
-    binding.pry
     array = filename.chomp(".mp3").split(" - ")
     song = Song.new(array[1])
     song.artist = array[0]
