@@ -33,7 +33,6 @@ class Artist
 
   def self.create(name)
     artist = self.new(name)
-    @@all << artist
     artist
   end
   
