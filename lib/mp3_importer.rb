@@ -3,6 +3,7 @@ class MP3Importer
   def initialize(path)
     @path = path
   end
+  
   def files
     Dir.entries(path).select {|file| if file.include?("mp3")}
   end
