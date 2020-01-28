@@ -6,6 +6,7 @@ attr_accessor :name, :songs
   def initialize(name)#artist_name
     @name = name
     @songs = [] #array of songs for each instance
+    @@all << self
   end
 
   #this exposes the @@all Class Variable
@@ -46,9 +47,5 @@ attr_accessor :name, :songs
     artist
   end
 
-  def save
-    @@all << self
-  end
-  
 end
 
