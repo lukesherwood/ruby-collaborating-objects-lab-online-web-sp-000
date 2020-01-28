@@ -5,10 +5,10 @@ class MP3Importer
   end
   def files
     file = Dir.entries(@path)
-    file.select do |file| 
+    file.select { |file| 
       if file.include?("mp3") 
         file
-      end
+    }
     end
   end
   
