@@ -20,10 +20,9 @@ class Artist
     if @@all.find do |artist|
       artist.name == name
       artist
-    else
-      artist = self.new(name)
-    @@all << artist
-    artist
+    else artist = self.new(name)
+      @@all << artist
+      artist
     end
   end
 
