@@ -16,7 +16,7 @@ class Song
     binding.pry
     array = filename.chomp(".mp3").split(" - ")
     song = Song.new(array[1])
-    song.artist_name = array[0]
+    song.artist = array[0]
     song
 =begin
     #It must parse a filename to find the song name and artist name. (Hint: every file separates the song and artist with a " - "). Now we put those values to use.From here, we will create a new song instance using the string we gathered from the filename.We'll also want to associate that new song with an artist. Use the artist attribute accessor to assign this. Return the new song instance.
