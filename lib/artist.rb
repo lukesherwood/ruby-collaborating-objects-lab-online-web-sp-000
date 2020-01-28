@@ -22,9 +22,6 @@ class Artist
   end
   
   def self.find_or_create_by_name(string_name)
-=begin 
-  #This class method should take the name that is passed in (remember, it will be a string), and do one of two things.Find the artist instance that has that name or create one if it doesn't exist. Either way, the return value of the method will be an instance of an artist with the name attribute filled out.
-=end
     if Song.all.any?{|n| n.name = string_name}
       @name = string_name
     else
@@ -37,3 +34,5 @@ class Artist
   end
 
 end
+
+
