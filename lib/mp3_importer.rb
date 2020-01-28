@@ -9,6 +9,7 @@ class MP3Importer
       if file.include?("mp3") 
         file
       end
+    end
   end
   
   def import
