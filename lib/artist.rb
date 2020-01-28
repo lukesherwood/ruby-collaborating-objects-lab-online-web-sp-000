@@ -27,15 +27,6 @@ class Artist
     end
   end
 
-
-  def self.find(name)
-    
-    end
-  end
-
-  def self.create(name)
-    
-  end
   
   def print_songs()
     puts @songs.collect {|x| x.name}
